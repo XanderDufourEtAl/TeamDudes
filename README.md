@@ -14,4 +14,9 @@ Patrick Storer - Developer
 
 Matthew Frizzle - Developer
 
-The Mission Statement: Currently, our mission is to define a problem
+The Problem Statements:
+1) I love UMaine sports, but I find it difficult to find the scores for each of the individual sports because the current resources available are difficult to navigate and require visiting multuiple different pages.
+
+2) Talking about and requesting money to keep fairness in roommate situations can be difficult. The consequences are an unfair and negative environment with unequal contribution among roomamtes. The current solutions only seem to address direct payments, so services like Venmo. We seek to connect direct payment services to this that allows users to be notified about how much they owe, with a breakdown of the bills, and pay there. 
+
+
