@@ -12,4 +12,6 @@ Cooper Stepenkiw - Developer
 
 Patrick Storer - Developer
 
+Matthew Frizzle - Developer
+
 The Mission Statement: Currently, our mission is to define a problem
