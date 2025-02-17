@@ -8,7 +8,7 @@ Micheal Ness - Designer
 
 Braden Pare - Developer
 
-Cooper Stepenkiw - Developer
+Cooper Stepankiw - Developer
 
 Patrick Storer - Developer
 
