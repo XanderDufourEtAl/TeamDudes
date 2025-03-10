@@ -15,8 +15,6 @@ Patrick Storer - Developer
 Matthew Frizzle - Developer
 
 The Problem Statements:
-1) I love UMaine sports, but I find it difficult to find the scores for each of the individual sports because the current resources available are difficult to navigate and require visiting multuiple different pages.
-
-2) Talking about and requesting money to keep fairness in roommate situations can be difficult. The consequences are an unfair and negative environment with unequal contribution among roomamtes. The current solutions only seem to address direct payments, so services like Venmo. We seek to connect direct payment services to this that allows users to be notified about how much they owe, with a breakdown of the bills, and pay there. 
+1) UMaine sports are a hub of the community, and a staple of Umaine, but the associated website which provides scores, game and player statistics, and game times, do not match in quality, the level of importance these sports hold for our university. The problem arises because the current solutions for finding this information are difficult to navigate, requiring you to visit multiple pages for each individual sport. It can also feel overwhelming to the average user, as the information is densely packed, shorthanded ad nauseam, and lacks convenience of layout. College sports of this caliber and popularity are held back by the inaccessibility and inefficiency of their associated websites. 
 
 
