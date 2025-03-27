@@ -5,38 +5,70 @@
   text-align: center;
 }
 
+.auth-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.auth-button {
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.signup {
+  background-color: #3d72b4;
+}
+
+.signup:hover {
+  background-color: #2a5a9c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: #646cff;
+}
+
+.login {
+  background-color: #4caf50;
+}
+
+.login:hover {
+  background-color: #3d8b40;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: #646cff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
+
+.logo.Maine:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
 
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  cursor: pointer;
 }
