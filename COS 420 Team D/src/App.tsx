@@ -17,7 +17,7 @@ function App() {
         </div>
         <h1>UMaine Hockey</h1>
         <div className="card">
-            Click here to see the schedule!
+            Click here for the schedule!
         </div>
       </div>
     </>
