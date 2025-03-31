@@ -1,12 +1,11 @@
 import docker
-import os
 import requests
 
 def grab_json_from_ncaa_api(container_name, api_route, destination_path):
     """
     Uses the ncaa-api-umaine Docker container to fetch JSON data from the NCAA API and saves it locally.
 
-    :param container_name: Name of the Docker container running ncaa-api-umaine.
+    :param container_name: Name of the Docker container running ncaa-api-umaine (our case relatively arbitrary).
     :param api_route: API route to fetch JSON data (e.g., "/scoreboard/football/fbs/2023/13/all-conf").
     :param destination_path: Path on the host to save the JSON file.
     """
@@ -34,12 +33,10 @@ def grab_json_from_ncaa_api(container_name, api_route, destination_path):
         print(f"Fetching data from {api_url}...")
 
         # Make the GET request
-        response = requests.get(api_url)
+        response = requests.get(api_url, verify=False)  # Disable SSL verification for local requests
         response.raise_for_status()  # Raise an error for HTTP errors
 
-        # Save the JSON data to the specified file
-        json_file_path = os.path.join(destination_path, "data.json")
-        with open(json_file_path, "w", encoding="utf-8") as f:
+        with open("test.json", "w") as f:
             f.write(response.text)
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -55,7 +52,7 @@ def grab_json_from_ncaa_api(container_name, api_route, destination_path):
 
 # Example usage
 grab_json_from_ncaa_api(
-    container_name="ncaa-api-container",
-    api_route="/scoreboard/football/fbs/2023/13/all-conf",
-    destination_path="C:/Users/frizz/Downloads"
+    container_name="ncaa-api",
+    api_route="/game/6384827/boxscore",
+    destination_path=""
 )
