@@ -1,27 +1,34 @@
-import maineLogo from './assets/maine.jpg'
-import './App.css'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import maineLogo from './assets/maine.jpg';
+import SignUp from './SignUp';
+import './App.css';
 
 function App() {
   return (
-    <>
+    <Router>
       <div className="auth-buttons">
-        <a href="signup.html" className="auth-button signup">Sign Up</a>
-        <a href="login.html" className="auth-button login">Login</a>
+        <Link to="/signup" className="auth-button signup">Sign Up</Link>
+        <Link to="/login" className="auth-button login">Login</Link>
       </div>
       
-      <div className="main-content">
-        <div>
-          <a href="nothing" target="_blank">
-            <img src={maineLogo} className="logo Maine" alt="Maine logo" />
-          </a>
-        </div>
-        <h1>UMaine Hockey</h1>
-        <div className="card">
-            Click here for the schedule!
-        </div>
-      </div>
-    </>
-  )
+      <Routes>
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/" element={
+          <div className="main-content">
+            <div>
+              <a href="nothing" target="_blank">
+                <img src={maineLogo} className="logo Maine" alt="Maine logo" />
+              </a>
+            </div>
+            <h1>UMaine Hockey</h1>
+            <div className="card">
+              Click here for the schedule!
+            </div>
+          </div>
+        } />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
