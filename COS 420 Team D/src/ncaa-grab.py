@@ -54,5 +54,5 @@ def grab_json_from_ncaa_api(container_name, api_route, destination_path):
 grab_json_from_ncaa_api(
     container_name="ncaa-api",
     api_route="/game/6384827/boxscore",
-    destination_path=""
+    destination_path="../"
 )
