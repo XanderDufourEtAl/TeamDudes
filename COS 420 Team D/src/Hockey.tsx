@@ -1,11 +1,10 @@
-import * as fs from 'fs';
+import jsonData from 'C:/Users/frizz/Documents/Github/TeamDudes/test.json';
+import './Hockey.css';
 
-import jsonData from './test.json' ;
-
-const data = JSON.parse(jsonData);
+const data = jsonData;
 console.log(data.meta.title);
 
-interface Team {
+interface HockeyTeam {
   teamId: number;
   playerStats: PlayerStat[];
   playerTotals: Totals;
@@ -34,9 +33,9 @@ interface Meta {
 
 interface GameData {
   meta: Meta;
-  teams: Team[];
+  teams: HockeyTeam[];
 }
 
 // Use the interface
-const gameData: GameData = JSON.parse(jsonData);
+const gameData: GameData = jsonData;
 console.log(gameData.meta.title);
