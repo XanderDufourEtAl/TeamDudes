@@ -1,4 +1,4 @@
-import jsonData from 'C:/Users/frizz/Documents/Github/TeamDudes/test.json';
+import jsonData from './assets/jsons/Hockey.json';
 import './Hockey.css';
 
 const data = jsonData;
@@ -20,6 +20,11 @@ interface PlayerStat {
   assists: string;
 }
 
+interface TeamData {
+  shortName: string
+  id: string;
+}
+
 interface Totals {
   goals: string;
   assists: string;
@@ -29,6 +34,7 @@ interface Totals {
 interface Meta {
   title: string;
   description: string;
+  teams: TeamData[];
 }
 
 interface GameData {
@@ -40,13 +46,19 @@ interface GameData {
 const gameData: GameData = jsonData;
 console.log(gameData.meta.title);
 function Hockey(){
+  const teamIdToShortName = gameData.meta.teams.reduce((map, team) => {
+    map[team.id] = team.shortName;
+    return map;
+  }, {} as Record<string, string>);
   return (
     <div className="hockey-container">
       <h1>{gameData.meta.title}</h1>
+      <h2>{gameData.meta.description}</h2>
+      <h3>Game Stats:</h3>
       <div className="teams">
         {gameData.teams.map((team) => (
           <div key={team.teamId} className="team-card">
-            <h2>Team ID: {team.teamId}</h2>
+            <h2>{teamIdToShortName[team.teamId.toString()]}</h2>
             <h3>Player Stats:</h3>
             <ul>
               {team.playerStats.map((player) => (
