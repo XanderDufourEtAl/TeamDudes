@@ -1,7 +1,8 @@
 import docker
 import requests
+import os
 
-def grab_json_from_ncaa_api(container_name, api_route, destination_path):
+def grab_json_from_ncaa_api(container_name, api_route, destination_path,file_name):
     """
     Uses the ncaa-api-umaine Docker container to fetch JSON data from the NCAA API and saves it locally.
 
@@ -35,8 +36,10 @@ def grab_json_from_ncaa_api(container_name, api_route, destination_path):
         # Make the GET request
         response = requests.get(api_url, verify=False)  # Disable SSL verification for local requests
         response.raise_for_status()  # Raise an error for HTTP errors
-
-        with open("test.json", "w") as f:
+        
+        os.makedirs(destination_path, exist_ok=True)  # Ensure the destination directory exists
+        json_file_path = os.path.join(destination_path, (file_name +".json"))
+        with open(json_file_path, "w") as f:
             f.write(response.text)
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -50,9 +53,13 @@ def grab_json_from_ncaa_api(container_name, api_route, destination_path):
             pass
         client.close()
 
+script_dir = os.path.dirname(__file__)  # Get the directory of the current script
+destination_path = os.path.join(script_dir, "assets", "jsons")
+
 # Example usage
 grab_json_from_ncaa_api(
     container_name="ncaa-api",
     api_route="/game/6384827/boxscore",
-    destination_path=""
+    destination_path=destination_path,
+    file_name="Hockey"
 )
