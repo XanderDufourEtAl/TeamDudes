@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import maineLogo from './assets/maine.jpg';
 import SignUp from './SignUp';
-import Hockey from './Hockey';
+
+import Baseball from './Baseball';
 import './App.css';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       
       <Routes>
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/hockey" element={<Hockey />} />
+        <Route path="/baseball" element={<Baseball />} />
         <Route path="/" element={
           <div className="main-content">
             <div>
@@ -24,7 +25,7 @@ function App() {
             </div>
             <h1>UMaine Hockey</h1>
             <div className="card">
-              <Link to="/hockey" className="schedule-link"> Click here for the schedule!</Link>
+              <Link to="/baseball" className="schedule-link"> Click here for the schedule!</Link>
             </div>
           </div>
         } />
