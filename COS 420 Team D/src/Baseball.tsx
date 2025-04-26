@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+//import jsonData from './assets/jsons/game.json';
 interface Player {
     Team: string;
     FirstName: string;
@@ -33,7 +34,7 @@ interface LastPlay {
     Action: string | null;
     Period: number;
     ClockSeconds: number;
-    Score: number
+    Score: number | null
     InvolvedPlayers?: Player[];
 }
 
@@ -96,15 +97,23 @@ interface BaseballGame {
     Situation: Situation;
 }
 
-const Baseball = () => {
-    const [score, setScore] = useState<string | null>(null);
-
+function Baseball() {
+    const [Homescore, setHomeScore] = useState<number>(0);
+    const [VisitingScore, setVisitingScore] = useState<number>(0);
+    const [HomeLogo, setHomeLogo] = useState<string>("");
+    const [VisitingLogo, setVisitingLogo] = useState<string>("");
+    const [gameData, setGameData] = useState<BaseballGame | null>(null);
     useEffect(() => {
         const fetchScore = async () => {
             try {
-                const response = await fetch("https://sidearmstats.com/msmary/baseball/game.json");
-                const data: BaseballGame = await response.json();
-                setScore(`${data.HomeTeam.Name}: ${data.HomeTeam.Score} - ${data.VisitingTeam.Name}: ${data.VisitingTeam.Score}`);
+                const response = await fetch("https://sidearmstats.com/umaine/baseball/game.json");
+                const json = await response.json();
+                const data: BaseballGame = json.Game; // Access the Game property to match the BaseballGame interface
+                setHomeScore(data.HomeTeam.Score);
+                setVisitingScore(data.VisitingTeam.Score);
+                setVisitingLogo(data.VisitingTeam.Logo);
+                setHomeLogo(data.HomeTeam.Logo);
+                setGameData(data); // Store the entire game data if needed
             } catch (error) {
                 console.error("Error fetching game data:", error);
             }
@@ -116,7 +125,10 @@ const Baseball = () => {
     return (
         <div>
             <h1>Baseball Game Score</h1>
-            {score ? <p>{score}</p> : <p>Loading...</p>}
+            <img src={HomeLogo} alt="Home Team Logo" style={{ width: "100px", height: "100px" }} />
+            <img src={VisitingLogo} alt="Visiting Team Logo" style={{ width: "100px", height: "100px" }} />
+            <h3>{gameData?.Date}</h3>
+            <p>{Homescore} - {VisitingScore}</p>
         </div>
     );
 };

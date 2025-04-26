@@ -44,7 +44,6 @@ interface GameData {
 
 // Use the interface
 const gameData: GameData = jsonData;
-console.log(gameData.meta.title);
 function Hockey(){
   const teamIdToShortName = gameData.meta.teams.reduce((map, team) => {
     map[team.id] = team.shortName;
