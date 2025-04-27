@@ -51,27 +51,10 @@ function Hockey(){
   }, {} as Record<string, string>);
   return (
     <div className="hockey-container">
-      <h1>{gameData.meta.title}</h1>
-      <h2>{gameData.meta.description}</h2>
-      <h3>Game Stats:</h3>
+      <h3>{gameData.meta.description}</h3>
       <div className="teams">
-        {gameData.teams.map((team) => (
-          <div key={team.teamId} className="team-card">
-            <h2>{teamIdToShortName[team.teamId.toString()]}</h2>
-            <h3>Player Stats:</h3>
-            <ul>
-              {team.playerStats.map((player) => (
-                <li key={player.name}>
-                  {player.firstName} {player.lastName} - {player.position}: {player.goals} goals, {player.assists} assists
-                </li>
-              ))}
-            </ul>
-            <h3>Total Stats:</h3>
-            <p>Goals: {team.playerTotals.goals}</p>
-            <p>Assists: {team.playerTotals.assists}</p>
-            <p>Shots: {team.playerTotals.shots}</p>
-          </div>
-        ))}
+        <p>{teamIdToShortName[gameData.teams[0].teamId.toString()]} | {teamIdToShortName[gameData.teams[1].teamId.toString()]}</p>
+        <p>{gameData.teams[0].totalStats.goals} - {gameData.teams[1].totalStats.goals}</p>
       </div>
     </div>
   );
