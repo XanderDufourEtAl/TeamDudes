@@ -16,6 +16,7 @@
     "react-router-dom": "^7.5.0"
   },
   "devDependencies": {
+    "@babel/types": "^7.27.0",
     "@eslint/js": "^9.21.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
