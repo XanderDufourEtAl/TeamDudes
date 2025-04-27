@@ -22,6 +22,7 @@ name: Node.js CI
      - name: Use Node.js ${{ matrix.node-version }}
        uses: actions/setup-node@v3
        with:
+         cache-dependency-path: COS 420 Team D/package-lock.json
          node-version: ${{ matrix.node-version }}
          cache: 'npm'
      - run: npm ci
