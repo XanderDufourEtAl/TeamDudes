@@ -96,7 +96,7 @@ interface BaseballGame {
     LastPlays: LastPlay[];
     Situation: Situation;
 }
-
+//No like seriously do you guys not write comments?
 function Baseball() {
     const [Homescore, setHomeScore] = useState<number>(0);
     const [VisitingScore, setVisitingScore] = useState<number>(0);
