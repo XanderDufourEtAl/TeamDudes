@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import maineLogo from './assets/maine.jpg';
 import SignUp from './SignUp';
 import Hockey from './Hockey';
+import Baseball from './Baseball';
+import WidgetPage from './WidgetPage';
 import './App.css';
 
 function App() {
@@ -14,7 +16,10 @@ function App() {
       
       <Routes>
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/baseball" element={<Baseball />} />
         <Route path="/hockey" element={<Hockey />} />
+        <Route path="/widget" element={<WidgetPage />} />
+        {/* Main page with links */}
         <Route path="/" element={
           <div className="main-content">
             <div>
@@ -24,7 +29,13 @@ function App() {
             </div>
             <h1>UMaine Hockey</h1>
             <div className="card">
-              <Link to="/hockey" className="schedule-link"> Click here for the schedule!</Link>
+              <Link to="/widget" className="schedule-link"> Click here for the schedule!</Link>
+            </div>
+            <div className="card">
+              <Link to="/hockey" className="hockey-link"> Click here for Hockey</Link>
+            </div>
+            <div className="card">
+              <Link to="/baseball" className="baseball-link"> Click here for Baseball</Link>
             </div>
           </div>
         } />

@@ -1,0 +1,145 @@
+{
+  "contests": [
+    {
+      "__typename": "Contest",
+      "id": "6384827",
+      "sportCode": "MIH",
+      "sportUrl": "icehockey-men",
+      "division": 1,
+      "clock": "",
+      "currentPeriod": "FINAL",
+      "finalMessage": "FINAL",
+      "gameState": "F",
+      "statusCodeDisplay": "final",
+      "network": "ESPN2",
+      "startTime": "20:30",
+      "startTimeEpoch": 1743208200,
+      "week": null,
+      "seasonYear": 2024,
+      "winner": 51081,
+      "hasStartTime": true,
+      "hasBoxscore": true,
+      "hasPbp": true,
+      "hasScoringSummary": true,
+      "hasPreview": false,
+      "hasRecap": false,
+      "hasTeamStats": false,
+      "linescores": [
+        {
+          "__typename": "Linescore",
+          "period": "1st",
+          "home": "1",
+          "visit": "3"
+        },
+        {
+          "__typename": "Linescore",
+          "period": "2nd",
+          "home": "0",
+          "visit": "1"
+        },
+        {
+          "__typename": "Linescore",
+          "period": "3rd",
+          "home": "0",
+          "visit": "1"
+        }
+      ],
+      "teams": [
+        {
+          "__typename": "ContestTeam",
+          "teamId": "39169",
+          "isHome": true,
+          "color": "#0C2340",
+          "seoname": "maine",
+          "nameFull": "University of Maine",
+          "nameShort": "Maine",
+          "name6Char": "MAINE",
+          "teamRank": null,
+          "gameRank": null,
+          "score": 1,
+          "seed": 3,
+          "record": "(24-7-6)",
+          "divisionName": "d1",
+          "division": 1,
+          "isWinner": false
+        },
+        {
+          "__typename": "ContestTeam",
+          "teamId": "51081",
+          "isHome": false,
+          "color": "#041E42",
+          "seoname": "penn-st",
+          "nameFull": "Pennsylvania State University",
+          "nameShort": "Penn St.",
+          "name6Char": "PENNST",
+          "teamRank": null,
+          "gameRank": null,
+          "score": 5,
+          "seed": null,
+          "record": "(20-13-4)",
+          "divisionName": "d1",
+          "division": 1,
+          "isWinner": true
+        }
+      ],
+      "liveVideos": [
+        {
+          "__typename": "Stream",
+          "enabled": false,
+          "syndicateOnly": false,
+          "streamId": "Web Video",
+          "mediaId": "",
+          "profileId": "",
+          "stateCode": 1,
+          "thumbnail": "",
+          "title": "Penn St. vs Maine",
+          "url": "",
+          "videoId": "ncaa-6384827",
+          "state": "pre"
+        }
+      ],
+      "championship": {
+        "__typename": "Championship",
+        "championshipId": 6345,
+        "title": "2025 DI Men's Ice Hockey Championship",
+        "year": 2025,
+        "season": 2024,
+        "sportUrl": "icehockey-men",
+        "sportName": "Men's Ice Hockey",
+        "divisionName": "d1",
+        "isMML": false,
+        "links": []
+      },
+      "championshipGame": {
+        "__typename": "ChampionshipGame",
+        "bracketId": 105,
+        "broadcasterName": "ESPN2",
+        "round": {
+          "__typename": "Round",
+          "title": "First Round",
+          "subtitle": "",
+          "label": "",
+          "roundNumber": 1
+        },
+        "region": {
+          "__typename": "RegionSection",
+          "title": null,
+          "subtitle": null,
+          "abbreviation": null,
+          "position": null
+        }
+      },
+      "links": [
+        { "__typename": "Link", "linkKey": "external-live-stats", "value": "" },
+        { "__typename": "Link", "linkKey": "external-live-video", "value": "" }
+      ],
+      "location": {
+        "__typename": "Location",
+        "venue": "PPL Center",
+        "city": "Allentown",
+        "stateUsps": "PA"
+      },
+      "stats": null
+    }
+  ]
+}

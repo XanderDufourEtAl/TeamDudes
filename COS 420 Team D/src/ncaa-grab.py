@@ -59,7 +59,7 @@ destination_path = os.path.join(script_dir, "assets", "jsons")
 # Example usage
 grab_json_from_ncaa_api(
     container_name="ncaa-api",
-    api_route="/game/6384827/boxscore",
+    api_route="/game/6384827",
     destination_path=destination_path,
-    file_name="Hockey"
+    file_name="HockeyData"
 )
