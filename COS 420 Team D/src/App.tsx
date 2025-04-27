@@ -6,6 +6,7 @@ import Baseball from './Baseball';
 import WidgetPage from './WidgetPage';
 import './App.css';
 
+//we really need to add some comments guys, this is unintelligable
 function App() {
   return (
     <Router>
