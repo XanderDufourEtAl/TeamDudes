@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "build": "npm build",
+  "clean": "rm -rf node_modules", 
+  "reinstall": "npm run clean && npm install", 
+  "rebuild": "npm run clean && npm install && npm run build",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
