@@ -127,7 +127,7 @@ function Baseball() {
             <img src={HomeLogo} alt="Home Team Logo" style={{ width: "100px", height: "100px" }} />
             <img src={VisitingLogo} alt="Visiting Team Logo" style={{ width: "100px", height: "100px" }} />
             <h3>{Homescore} - {VisitingScore}</h3>
-            <p>{gameData?.Date}</p>
+            <p>{gameData?.Date} yay sport</p>
             
         </div>
     );
