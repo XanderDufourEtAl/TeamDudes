@@ -28,6 +28,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install dependencies
+      # possibly not running
       run: npm ci
       working-directory: "COS 420 Team D"
     - name: Build project
