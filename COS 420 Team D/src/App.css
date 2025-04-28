@@ -30,7 +30,7 @@
 }
 
 .signup:hover {
-  background-color: #2a5a9c;
+  background-color: #1e58a8;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-color: #646cff;
@@ -41,7 +41,7 @@
 }
 
 .login:hover {
-  background-color: #3d8b40;
+  background-color: #38a23b;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-color: #646cff;
@@ -61,7 +61,7 @@
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #0c14acaa);
 }
 
 .logo.Maine:hover {
