@@ -96,17 +96,16 @@ interface BaseballGame {
     LastPlays: LastPlay[];
     Situation: Situation;
 }
-
 function Baseball() {
     const [Homescore, setHomeScore] = useState<number>(0);
     const [VisitingScore, setVisitingScore] = useState<number>(0);
     const [HomeLogo, setHomeLogo] = useState<string>("");
     const [VisitingLogo, setVisitingLogo] = useState<string>("");
-    const [gameData, setGameData] = useState<BaseballGame | null>(null);
+    const [gameData, setGameData] = useState<BaseballGame | null>(null);// Can either use gameData to access data for a game or create individual variables as shown above.
     useEffect(() => {
         const fetchScore = async () => {
             try {
-                const response = await fetch("https://sidearmstats.com/umaine/baseball/game.json");
+                const response = await fetch("https://sidearmstats.com/umaine/baseball/game.json");//Link to game.json (may need to be updated depending on umaine Home or Away game)
                 const json = await response.json();
                 const data: BaseballGame = json.Game; // Access the Game property to match the BaseballGame interface
                 setHomeScore(data.HomeTeam.Score);
@@ -123,6 +122,7 @@ function Baseball() {
     }, []);
 
     return (
+        //Formatting for What will be displayed on the widget.tsx
         <div>
             <img src={HomeLogo} alt="Home Team Logo" style={{ width: "100px", height: "100px" }} />
             <img src={VisitingLogo} alt="Visiting Team Logo" style={{ width: "100px", height: "100px" }} />
