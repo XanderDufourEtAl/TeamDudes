@@ -5,7 +5,7 @@ describe('App', () => {
   it('renders the homepage content', () => {
     render(<App />);
     expect(screen.getByText('UMaine Hockey')).toBeInTheDocument();
-    expect(screen.getByText('Click here for the schedule!')).toBeInTheDocument();
+    expect(screen.getByText('Click here for the Dashboard!')).toBeInTheDocument();
    // expect(screen.getByText('Click here for the Baseball')).toBeInTheDocument();
   });
 

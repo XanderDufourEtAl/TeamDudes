@@ -1,4 +1,4 @@
-import jsonData from './assets/jsons/Hockey.json';
+import jsonData from './assets/jsons/Hockey.json';// Data is currently hardcoded to the json file, using ncaa-grab.py and gathering boxscore
 import './Hockey.css';
 
 const data = jsonData;
@@ -43,13 +43,15 @@ interface GameData {
 }
 
 // Use the interface
-const gameData: GameData = jsonData;
+const gameData: GameData = jsonData;// Holds all the data from the json, accessed using the interfaces
 function Hockey(){
+  //Have to use this to get the team names from the json as only team id and state name are given
   const teamIdToShortName = gameData.meta.teams.reduce((map, team) => {
     map[team.id] = team.shortName;
     return map;
   }, {} as Record<string, string>);
   return (
+    // Formatting the data to be displayed in the widget
     <div className="hockey-container">
       <h3>{gameData.meta.description}</h3>
       <div className="teams">

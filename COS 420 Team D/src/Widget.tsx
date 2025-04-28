@@ -3,12 +3,13 @@ import "./Widget.css";
 import Baseball from "./Baseball";
 import Hockey from "./Hockey";
 
+// Formatting and Functionality for the widget component
 function Widget({
   initialPosition,
   widgetType,
 }: {
   initialPosition: { x: number; y: number };
-  widgetType: "Baseball" | "Hockey";
+  widgetType: "Baseball" | "Hockey";// Add more types of tsx elements as needed
 }) {
   const [position, setPosition] = useState<{ x: number; y: number }>(initialPosition);
   const [dragging, setDragging] = useState<boolean>(false);
@@ -34,7 +35,6 @@ function Widget({
   const onMouseUp = () => {
     setDragging(false);
   };
-
   return (
     <div
       id="mydiv"
@@ -57,6 +57,7 @@ function Widget({
       <div id="mydivcontent" style={{ width: "200px", height: "200px" }}>
         {widgetType === "Baseball" && <Baseball />}
         {widgetType === "Hockey" && <Hockey />}
+        {/* Add more widget types as needed */}
       </div>
     </div>
   );
