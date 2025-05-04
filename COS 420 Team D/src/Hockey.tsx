@@ -1,6 +1,16 @@
 import jsonData from './assets/jsons/Hockey.json';// Data is currently hardcoded to the json file, using ncaa-grab.py and gathering boxscore
 import './Hockey.css';
 
+/*
+  Similar to the baseball widget, the hockey widget fetches data from a json file.
+  This data on the other hand is not live and is hardcoded to a json file.
+  Currently the json file is hockey.json which is the boxscore for umaine last hockey game vs Penn State.
+  The data is formatted on its own from hockey.css and then displayed in the widget.tsx file.
+
+  As i said in baseball.tsx, if you want to add a widget for individual player for example,
+  you should be able to do a new function and export it but again idk for sure -Matt
+*/
+
 const data = jsonData;
 console.log(data.meta.title);
 

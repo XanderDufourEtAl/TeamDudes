@@ -1,5 +1,16 @@
 import { useEffect, useState } from "react";
 //import jsonData from './assets/jsons/game.json';
+
+/*
+    Baseball.tsx is the component that handles the baseball widget.
+    It fetches data straight from umaine baseballs sidearm stats page.
+    The data is then formatted and displayed in the widget.tsx file.
+
+    I belive if you want to add more widget types based on this same data you should be able to create another function-
+    and export it like the one below, but Im not to sure exactly -Matt
+*/
+
+
 interface Player {
     Team: string;
     FirstName: string;
@@ -106,7 +117,7 @@ function Baseball() {
     useEffect(() => {
         const fetchScore = async () => {
             try {
-                const response = await fetch("https://sidearmstats.com/umaine/baseball/game.json");//Link to game.json (may need to be updated depending on umaine Home or Away game)
+                const response = await fetch("https://sidearmstats.com/bryantu/baseball/game.json");//Link to game.json (may need to be updated depending on umaine Home or Away game)
                 const json = await response.json();
                 const data: BaseballGame = json.Game; // Access the Game property to match the BaseballGame interface
                 setHomeScore(data.HomeTeam.Score);

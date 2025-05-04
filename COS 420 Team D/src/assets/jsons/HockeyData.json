@@ -1,145 +1,251 @@
 {
-  "contests": [
+  "division": "d1",
+  "inputMD5Sum": "bd576db9fcc8c523a5277ce460267c4f",
+  "month": "04",
+  "gameDates": [
     {
-      "__typename": "Contest",
-      "id": "6384827",
-      "sportCode": "MIH",
-      "sportUrl": "icehockey-men",
-      "division": 1,
-      "clock": "",
-      "currentPeriod": "FINAL",
-      "finalMessage": "FINAL",
-      "gameState": "F",
-      "statusCodeDisplay": "final",
-      "network": "ESPN2",
-      "startTime": "20:30",
-      "startTimeEpoch": 1743208200,
-      "week": null,
-      "seasonYear": 2024,
-      "winner": 51081,
-      "hasStartTime": true,
-      "hasBoxscore": true,
-      "hasPbp": true,
-      "hasScoringSummary": true,
-      "hasPreview": false,
-      "hasRecap": false,
-      "hasTeamStats": false,
-      "linescores": [
-        {
-          "__typename": "Linescore",
-          "period": "1st",
-          "home": "1",
-          "visit": "3"
-        },
-        {
-          "__typename": "Linescore",
-          "period": "2nd",
-          "home": "0",
-          "visit": "1"
-        },
-        {
-          "__typename": "Linescore",
-          "period": "3rd",
-          "home": "0",
-          "visit": "1"
-        }
-      ],
-      "teams": [
-        {
-          "__typename": "ContestTeam",
-          "teamId": "39169",
-          "isHome": true,
-          "color": "#0C2340",
-          "seoname": "maine",
-          "nameFull": "University of Maine",
-          "nameShort": "Maine",
-          "name6Char": "MAINE",
-          "teamRank": null,
-          "gameRank": null,
-          "score": 1,
-          "seed": 3,
-          "record": "(24-7-6)",
-          "divisionName": "d1",
-          "division": 1,
-          "isWinner": false
-        },
-        {
-          "__typename": "ContestTeam",
-          "teamId": "51081",
-          "isHome": false,
-          "color": "#041E42",
-          "seoname": "penn-st",
-          "nameFull": "Pennsylvania State University",
-          "nameShort": "Penn St.",
-          "name6Char": "PENNST",
-          "teamRank": null,
-          "gameRank": null,
-          "score": 5,
-          "seed": null,
-          "record": "(20-13-4)",
-          "divisionName": "d1",
-          "division": 1,
-          "isWinner": true
-        }
-      ],
-      "liveVideos": [
-        {
-          "__typename": "Stream",
-          "enabled": false,
-          "syndicateOnly": false,
-          "streamId": "Web Video",
-          "mediaId": "",
-          "profileId": "",
-          "stateCode": 1,
-          "thumbnail": "",
-          "title": "Penn St. vs Maine",
-          "url": "",
-          "videoId": "ncaa-6384827",
-          "state": "pre"
-        }
-      ],
-      "championship": {
-        "__typename": "Championship",
-        "championshipId": 6345,
-        "title": "2025 DI Men's Ice Hockey Championship",
-        "year": 2025,
-        "season": 2024,
-        "sportUrl": "icehockey-men",
-        "sportName": "Men's Ice Hockey",
-        "divisionName": "d1",
-        "isMML": false,
-        "links": []
-      },
-      "championshipGame": {
-        "__typename": "ChampionshipGame",
-        "bracketId": 105,
-        "broadcasterName": "ESPN2",
-        "round": {
-          "__typename": "Round",
-          "title": "First Round",
-          "subtitle": "",
-          "label": "",
-          "roundNumber": 1
-        },
-        "region": {
-          "__typename": "RegionSection",
-          "title": null,
-          "subtitle": null,
-          "abbreviation": null,
-          "position": null
-        }
-      },
-      "links": [
-        { "__typename": "Link", "linkKey": "external-live-stats", "value": "" },
-        { "__typename": "Link", "linkKey": "external-live-video", "value": "" }
-      ],
-      "location": {
-        "__typename": "Location",
-        "venue": "PPL Center",
-        "city": "Allentown",
-        "stateUsps": "PA"
-      },
-      "stats": null
+      "contest_date": "04-01-2025",
+      "year": "2025",
+      "weekday": "Tue",
+      "games": 0,
+      "season": "2024",
+      "day": "01"
+    },
+    {
+      "contest_date": "04-02-2025",
+      "year": "2025",
+      "weekday": "Wed",
+      "games": 0,
+      "season": "2024",
+      "day": "02"
+    },
+    {
+      "contest_date": "04-03-2025",
+      "year": "2025",
+      "weekday": "Thu",
+      "games": 0,
+      "season": "2024",
+      "day": "03"
+    },
+    {
+      "contest_date": "04-04-2025",
+      "year": "2025",
+      "weekday": "Fri",
+      "games": 0,
+      "season": "2024",
+      "day": "04"
+    },
+    {
+      "contest_date": "04-05-2025",
+      "year": "2025",
+      "weekday": "Sat",
+      "games": 0,
+      "season": "2024",
+      "day": "05"
+    },
+    {
+      "contest_date": "04-06-2025",
+      "year": "2025",
+      "weekday": "Sun",
+      "games": 0,
+      "season": "2024",
+      "day": "06"
+    },
+    {
+      "contest_date": "04-07-2025",
+      "year": "2025",
+      "weekday": "Mon",
+      "games": 0,
+      "season": "2024",
+      "day": "07"
+    },
+    {
+      "contest_date": "04-08-2025",
+      "year": "2025",
+      "weekday": "Tue",
+      "games": 0,
+      "season": "2024",
+      "day": "08"
+    },
+    {
+      "contest_date": "04-09-2025",
+      "year": "2025",
+      "weekday": "Wed",
+      "games": 0,
+      "season": "2024",
+      "day": "09"
+    },
+    {
+      "contest_date": "04-10-2025",
+      "year": "2025",
+      "weekday": "Thu",
+      "games": 2,
+      "season": "2024",
+      "day": "10"
+    },
+    {
+      "contest_date": "04-11-2025",
+      "year": "2025",
+      "weekday": "Fri",
+      "games": 0,
+      "season": "2024",
+      "day": "11"
+    },
+    {
+      "contest_date": "04-12-2025",
+      "year": "2025",
+      "weekday": "Sat",
+      "games": 1,
+      "season": "2024",
+      "day": "12"
+    },
+    {
+      "contest_date": "04-13-2025",
+      "year": "2025",
+      "weekday": "Sun",
+      "games": 0,
+      "season": "2024",
+      "day": "13"
+    },
+    {
+      "contest_date": "04-14-2025",
+      "year": "2025",
+      "weekday": "Mon",
+      "games": 0,
+      "season": "2024",
+      "day": "14"
+    },
+    {
+      "contest_date": "04-15-2025",
+      "year": "2025",
+      "weekday": "Tue",
+      "games": 0,
+      "season": "2024",
+      "day": "15"
+    },
+    {
+      "contest_date": "04-16-2025",
+      "year": "2025",
+      "weekday": "Wed",
+      "games": 0,
+      "season": "2024",
+      "day": "16"
+    },
+    {
+      "contest_date": "04-17-2025",
+      "year": "2025",
+      "weekday": "Thu",
+      "games": 0,
+      "season": "2024",
+      "day": "17"
+    },
+    {
+      "contest_date": "04-18-2025",
+      "year": "2025",
+      "weekday": "Fri",
+      "games": 0,
+      "season": "2024",
+      "day": "18"
+    },
+    {
+      "contest_date": "04-19-2025",
+      "year": "2025",
+      "weekday": "Sat",
+      "games": 0,
+      "season": "2024",
+      "day": "19"
+    },
+    {
+      "contest_date": "04-20-2025",
+      "year": "2025",
+      "weekday": "Sun",
+      "games": 0,
+      "season": "2024",
+      "day": "20"
+    },
+    {
+      "contest_date": "04-21-2025",
+      "year": "2025",
+      "weekday": "Mon",
+      "games": 0,
+      "season": "2024",
+      "day": "21"
+    },
+    {
+      "contest_date": "04-22-2025",
+      "year": "2025",
+      "weekday": "Tue",
+      "games": 0,
+      "season": "2024",
+      "day": "22"
+    },
+    {
+      "contest_date": "04-23-2025",
+      "year": "2025",
+      "weekday": "Wed",
+      "games": 0,
+      "season": "2024",
+      "day": "23"
+    },
+    {
+      "contest_date": "04-24-2025",
+      "year": "2025",
+      "weekday": "Thu",
+      "games": 0,
+      "season": "2024",
+      "day": "24"
+    },
+    {
+      "contest_date": "04-25-2025",
+      "year": "2025",
+      "weekday": "Fri",
+      "games": 0,
+      "season": "2024",
+      "day": "25"
+    },
+    {
+      "contest_date": "04-26-2025",
+      "year": "2025",
+      "weekday": "Sat",
+      "games": 0,
+      "season": "2024",
+      "day": "26"
+    },
+    {
+      "contest_date": "04-27-2025",
+      "year": "2025",
+      "weekday": "Sun",
+      "games": 0,
+      "season": "2024",
+      "day": "27"
+    },
+    {
+      "contest_date": "04-28-2025",
+      "year": "2025",
+      "weekday": "Mon",
+      "games": 0,
+      "season": "2024",
+      "day": "28"
+    },
+    {
+      "contest_date": "04-29-2025",
+      "year": "2025",
+      "weekday": "Tue",
+      "games": 0,
+      "season": "2024",
+      "day": "29"
+    },
+    {
+      "contest_date": "04-30-2025",
+      "year": "2025",
+      "weekday": "Wed",
+      "games": 0,
+      "season": "2024",
+      "day": "30"
     }
-  ]
+  ],
+  "conference_name": "all-conf",
+  "created_at": "04-11-2025 00:23:27",
+  "season": "2024",
+  "sport": "MIH"
 }
