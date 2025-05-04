@@ -19,12 +19,14 @@ function Widget({
   gridSize,
   freeCells,
   onMove,
+  onRemove,
 }: {
   initialPosition: { x: number; y: number };
   widgetType: "Baseball" | "Hockey";
   gridSize: number;
   freeCells: Set<string>;
   onMove: (oldCell: string, newCell: string) => void;
+  onRemove: () => void;
 }) {
   const [position, setPosition] = useState<{ x: number; y: number }>(initialPosition);
   const [dragging, setDragging] = useState<boolean>(false);
@@ -84,7 +86,7 @@ function Widget({
     };
   },);
   
-  // Don't worry about the stuff above its just functionality that doens't need to be changed
+  // Don't worry about the stuff above its just functionality that doesn't need to be changed
   return (
     <div
       id="mydiv"
@@ -93,13 +95,19 @@ function Widget({
         position: "absolute",
         left: position.x,
         top: position.y,
+        /*height: "225px",*/
         cursor: dragging ? "grabbing" : "grab",
       }}
     >
+      <button
+        className="remove-widget-button"
+        onClick={onRemove}
+        style={{ position: "absolute", top: 5, right: 5 }}
+        >✖</button>
       <div id="mydivheader" style={{ cursor: "move" }}>
         {widgetType} Widget
       </div>
-      <div id="mydivcontent" style={{ width: "200px", height: "200px" }}>
+      <div id="mydivcontent" style={{ width: "225px", height: "200px" }}>
         {widgetType === "Baseball" && <Baseball />}
         {widgetType === "Hockey" && <Hockey />}
         {/* Add more widget types as needed */}

@@ -1,5 +1,6 @@
 import Widget from './Widget';
 import { useState } from 'react';
+import './WidgetPage.css'; // Import your CSS file for styling
 
 /*
     The widget page is the main page of the application, could be considered the dashboard.
@@ -31,12 +32,16 @@ function WidgetPage() {
         const newWidget = {
             id: widgets.length + 1,
             type,
-            position: { x: (225*widgets.length), y: 0 }, // Default position
+            position: { x: 0, y: 0 }, // Default position
         };
         setWidgets((prev) => [...prev, newWidget]);
         setShowModal(false); // Close the modal after adding
     };
 
+    //Function to handle removing widgets from the grid
+    const removeWidget = (id: number) => {
+        setWidgets((prev) => prev.filter((widget) => widget.id !== id));
+    };
     return (
         <div className="widget-page">
             <div className="add-widget">
@@ -57,14 +62,18 @@ function WidgetPage() {
             )}
 
             {widgets.map((widget) => (
-                <Widget
-                    key={widget.id}
-                    initialPosition={widget.position}
-                    gridSize={225}
-                    freeCells={freeCells}
-                    onMove={movingHandler}
-                    widgetType={widget.type}
-                />
+                <div key={widget.id} className="widget-container">
+                    <div className="widget-content">
+                        <Widget
+                            initialPosition={widget.position}
+                            gridSize={250}
+                            freeCells={freeCells}
+                            onMove={movingHandler}
+                            widgetType={widget.type}
+                            onRemove={() => removeWidget(widget.id)} // Pass the remove function
+                        />
+                    </div>
+                </div>
             ))}
         </div>
     );
