@@ -1,0 +1,128 @@
+:root {
+    /* Light theme colors */
+    --bg-color: #ffffff;
+    --text-color: #213547;
+    --card-bg: #003263;
+    --card-text: white;
+    --button-hover-border: #646cff;
+    --logo-shadow-light: #0c14acaa;
+    --logo-shadow-maine: #3fcdf5aa;
+  }
+  
+  [data-theme="dark"] {
+    /* Dark theme colors */
+    --bg-color: #242424;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --card-bg: #1a1a1a;
+    --card-text: #ffffff;
+    --button-hover-border: #ffffff;
+    --logo-shadow-light: #646cffaa;
+    --logo-shadow-maine: #3fcdf5aa;
+  }
+  
+  /* Base styles */
+  #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Theme toggle button */
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: #646cff;
+    color: white;
+    border: 1px solid transparent;
+    z-index: 1000;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #535bf2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--button-hover-border);
+  }
+  
+  .auth-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+  }
+  
+  .auth-button {
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+  }
+  
+  .signup {
+    background-color: #3d72b4;
+  }
+  
+  .signup:hover {
+    background-color: #1e58a8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #646cff;
+  }
+  
+  .login {
+    background-color: #4caf50;
+  }
+  
+  .login:hover {
+    background-color: #38a23b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #646cff;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #0c14acaa);
+  }
+  
+  .logo.Maine:hover {
+    filter: drop-shadow(0 0 2em #3fcdf5aa);
+  }
+  
+  .card {
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #003263;
+    color: white;
+  }
+  
