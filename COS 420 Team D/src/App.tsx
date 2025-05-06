@@ -24,7 +24,7 @@ function App() {
                 <img src={maineLogo} className="logo Maine" alt="Maine logo" />
               </a>
             </div>
-            <h1>UMaine Hockey</h1>
+            <h1>Black Bear Bulletin</h1>
             <div className="card">
               <Link to="/widget" className="schedule-link"> Click here for the Dashboard!</Link>
             </div>
