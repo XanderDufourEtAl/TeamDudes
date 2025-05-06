@@ -1,4 +1,4 @@
-type Theme = 'light' | 'dark';
+/* type Theme = 'light' | 'dark';
 
 class ThemeManager {
   private currentTheme: Theme = 'light';
