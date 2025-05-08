@@ -1,0 +1,647 @@
+{
+    "inputMD5Sum": "a179ed9e48d6a2e8235e0efeb3af1cb2",
+    "updatedTimestamp": "2025-03-28 23:14:22 ET",
+    "meta": {
+      "title": "Umaine Football scores",
+      "description": "Boxscores for Maine vs Penn St.",
+      "sport": "hockey-men",
+      "division": "d1",
+      "gametype": "Regular Season",
+      "status": "Final",
+      "period": "3",
+      "minutes": "00",
+      "seconds": "00",
+      "teams": [
+        {
+          "homeTeam": "true",
+          "id": "39169",
+          "seoName": "maine",
+          "sixCharAbbr": "MAINE",
+          "shortName": "Maine",
+          "nickName": "Black Bears",
+          "color": "#0C2340"
+        },
+        {
+          "homeTeam": "false",
+          "id": "51081",
+          "seoName": "penn-st",
+          "sixCharAbbr": "PENNST",
+          "shortName": "Penn St.",
+          "nickName": "Nittany Lions",
+          "color": "#041E42"
+        }
+      ]
+    },
+    "teams": [
+      {
+        "teamId": 51081,
+        "playerHeader": {
+          "name": "Name",
+          "jerseyNum": "Number",
+          "position": "Position",
+          "goals": "Goals",
+          "assists": "Assists",
+          "plusminus": "Plus/Minus",
+          "shots": "Shots",
+          "pim": "PIM"
+        },
+        "playerStats": [
+          {
+            "firstName": "Cade",
+            "lastName": "Christenson",
+            "name": "Cade Christenson",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "27",
+            "position": "LD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "2",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "Danny",
+            "lastName": "Dzhaniyev",
+            "name": "Danny Dzhaniyev",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "13",
+            "position": "LW",
+            "goals": "0",
+            "assists": "1",
+            "plusminus": "0",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "Aiden",
+            "lastName": "Fink",
+            "name": "Aiden Fink",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "18",
+            "position": "RW",
+            "goals": "0",
+            "assists": "1",
+            "plusminus": "0",
+            "shots": "3",
+            "pim": "0"
+          },
+          {
+            "firstName": "Reese",
+            "lastName": "Laubach",
+            "name": "Reese Laubach",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "29",
+            "position": "C",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "5",
+            "pim": "0"
+          },
+          {
+            "firstName": "Simon",
+            "lastName": "Mack",
+            "name": "Simon Mack",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "4",
+            "position": "RD",
+            "goals": "0",
+            "assists": "1",
+            "plusminus": "2",
+            "shots": "0",
+            "pim": "0"
+          },
+          {
+            "firstName": "Arsenii",
+            "lastName": "Sergeev",
+            "name": "Arsenii Sergeev",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "35",
+            "position": "G",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "0",
+            "pim": "0"
+          },
+          {
+            "firstName": "Casey",
+            "lastName": "Aman",
+            "name": "Casey Aman",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "3",
+            "position": "RD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-1",
+            "shots": "0",
+            "pim": "0"
+          },
+          {
+            "firstName": "Charlie",
+            "lastName": "Cerrato",
+            "name": "Charlie Cerrato",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "15",
+            "position": "C",
+            "goals": "0",
+            "assists": "3",
+            "plusminus": "2",
+            "shots": "5",
+            "pim": "0"
+          },
+          {
+            "firstName": "Jarod",
+            "lastName": "Crespo",
+            "name": "Jarod Crespo",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "24",
+            "position": "RD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "1",
+            "shots": "2",
+            "pim": "0"
+          },
+          {
+            "firstName": "Matt",
+            "lastName": "Dimarsico",
+            "name": "Matt Dimarsico",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "14",
+            "position": "LW",
+            "goals": "2",
+            "assists": "0",
+            "plusminus": "2",
+            "shots": "5",
+            "pim": "0"
+          },
+          {
+            "firstName": "Jimmy",
+            "lastName": "Dowd, jr.",
+            "name": "Jimmy Dowd, jr.",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "6",
+            "position": "LD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "1",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "Dane",
+            "lastName": "Dowiak",
+            "name": "Dane Dowiak",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "19",
+            "position": "LW",
+            "goals": "2",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "3",
+            "pim": "2"
+          },
+          {
+            "firstName": "Nick",
+            "lastName": "Fascia",
+            "name": "Nick Fascia",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "10",
+            "position": "LD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-1",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "Tyler",
+            "lastName": "Paquette",
+            "name": "Tyler Paquette",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "23",
+            "position": "RW",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "Keaton",
+            "lastName": "Peters",
+            "name": "Keaton Peters",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "9",
+            "position": "C",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "0",
+            "pim": "0"
+          },
+          {
+            "firstName": "Ben",
+            "lastName": "Schoen",
+            "name": "Ben Schoen",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "12",
+            "position": "C",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "0",
+            "pim": "0"
+          },
+          {
+            "firstName": "Jj",
+            "lastName": "Wiebusch",
+            "name": "Jj Wiebusch",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "20",
+            "position": "RW",
+            "goals": "1",
+            "assists": "1",
+            "plusminus": "2",
+            "shots": "3",
+            "pim": "0"
+          }
+        ],
+        "goalieHeader": {
+          "name": "Name",
+          "jerseyNum": "Number",
+          "minutesAtGoalie": "Min",
+          "saves": "Saves",
+          "goalsAllowed": "Goals Against",
+          "shots": "Shots",
+          "pim": "PIM"
+        },
+        "goalieStats": [
+          {
+            "firstName": "Arsenii",
+            "lastName": "Sergeev",
+            "name": "Arsenii Sergeev",
+            "started": "Y",
+            "jerseyNum": "35",
+            "minutesAtGoalie": "60:0",
+            "saves": "26",
+            "goalsAllowed": "1",
+            "shots": "0",
+            "pim": "0"
+          }
+        ],
+        "playerTotals": {
+          "goals": "5",
+          "assists": "7",
+          "plusminus": "10",
+          "shots": "34",
+          "pim": "4"
+        },
+        "goalieTotals": {
+          "minutesAtGoalie": "",
+          "saves": "",
+          "goalsAllowed": "",
+          "shots": "",
+          "pim": ""
+        },
+        "totalStats": {
+          "goals": "5",
+          "assists": "7",
+          "plusminus": "10",
+          "shots": "34",
+          "pim": "4"
+        }
+      },
+      {
+        "teamId": 39169,
+        "playerHeader": {
+          "name": "Name",
+          "jerseyNum": "Number",
+          "position": "Position",
+          "goals": "Goals",
+          "assists": "Assists",
+          "plusminus": "Plus/Minus",
+          "shots": "Shots",
+          "pim": "PIM"
+        },
+        "playerStats": [
+          {
+            "firstName": "Albin",
+            "lastName": "Boija",
+            "name": "Albin Boija",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "30",
+            "position": "G",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "David",
+            "lastName": "Breazeale",
+            "name": "David Breazeale",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "37",
+            "position": "LD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-2",
+            "shots": "0",
+            "pim": "0"
+          },
+          {
+            "firstName": "Brandon",
+            "lastName": "Chabrier",
+            "name": "Brandon Chabrier",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "15",
+            "position": "RD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-2",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "Thomas",
+            "lastName": "Freel",
+            "name": "Thomas Freel",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "26",
+            "position": "LW",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-2",
+            "shots": "1",
+            "pim": "4"
+          },
+          {
+            "firstName": "Josh",
+            "lastName": "Nadeau",
+            "name": "Josh Nadeau",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "20",
+            "position": "RW",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-2",
+            "shots": "4",
+            "pim": "2"
+          },
+          {
+            "firstName": "Harrison",
+            "lastName": "Scott",
+            "name": "Harrison Scott",
+            "started": "Y",
+            "participated": "Y",
+            "jerseyNum": "22",
+            "position": "C",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-3",
+            "shots": "4",
+            "pim": "2"
+          },
+          {
+            "firstName": "Luke",
+            "lastName": "Antonacci",
+            "name": "Luke Antonacci",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "3",
+            "position": "LD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "1",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "Lynden",
+            "lastName": "Breen",
+            "name": "Lynden Breen",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "27",
+            "position": "C",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "2",
+            "pim": "0"
+          },
+          {
+            "firstName": "Frank",
+            "lastName": "Djurasevic",
+            "name": "Frank Djurasevic",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "44",
+            "position": "RD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-1",
+            "shots": "2",
+            "pim": "0"
+          },
+          {
+            "firstName": "Owen",
+            "lastName": "Fowler",
+            "name": "Owen Fowler",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "12",
+            "position": "LW",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "0",
+            "pim": "0"
+          },
+          {
+            "firstName": "Brandon",
+            "lastName": "Holt",
+            "name": "Brandon Holt",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "4",
+            "position": "LD",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-1",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "Taylor",
+            "lastName": "Makar",
+            "name": "Taylor Makar",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "18",
+            "position": "LW",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "1",
+            "shots": "0",
+            "pim": "0"
+          },
+          {
+            "firstName": "Bodie",
+            "lastName": "Nobes",
+            "name": "Bodie Nobes",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "34",
+            "position": "RD",
+            "goals": "1",
+            "assists": "0",
+            "plusminus": "1",
+            "shots": "1",
+            "pim": "0"
+          },
+          {
+            "firstName": "Nolan",
+            "lastName": "Renwick",
+            "name": "Nolan Renwick",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "24",
+            "position": "C",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "4",
+            "pim": "0"
+          },
+          {
+            "firstName": "Charlie",
+            "lastName": "Russell",
+            "name": "Charlie Russell",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "11",
+            "position": "RW",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "0",
+            "shots": "1",
+            "pim": "2"
+          },
+          {
+            "firstName": "Sully",
+            "lastName": "Scholle",
+            "name": "Sully Scholle",
+            "started": "N",
+            "participated": "Y",
+            "jerseyNum": "14",
+            "position": "LW",
+            "goals": "0",
+            "assists": "0",
+            "plusminus": "-1",
+            "shots": "1",
+            "pim": "0"
+          }
+        ],
+        "goalieHeader": {
+          "name": "Name",
+          "jerseyNum": "Number",
+          "minutesAtGoalie": "Min",
+          "saves": "Saves",
+          "goalsAllowed": "Goals Against",
+          "shots": "Shots",
+          "pim": "PIM"
+        },
+        "goalieStats": [
+          {
+            "firstName": "Albin",
+            "lastName": "Boija",
+            "name": "Albin Boija",
+            "started": "Y",
+            "jerseyNum": "30",
+            "minutesAtGoalie": "59:13",
+            "saves": "29",
+            "goalsAllowed": "4",
+            "shots": "1",
+            "pim": "0"
+          }
+        ],
+        "playerTotals": {
+          "goals": "1",
+          "assists": "0",
+          "plusminus": "-11",
+          "shots": "27",
+          "pim": "10"
+        },
+        "goalieTotals": {
+          "minutesAtGoalie": "",
+          "saves": "",
+          "goalsAllowed": "",
+          "shots": "",
+          "pim": ""
+        },
+        "totalStats": {
+          "goals": "1",
+          "assists": "0",
+          "plusminus": "-11",
+          "shots": "27",
+          "pim": "10"
+        }
+      }
+    ],
+    "penaltySummary": [],
+    "penaltyTotals": {
+      "description": "Penn St. 4 minutes on 2 infractions, Maine 10 minutes on 5 infractions"
+    },
+    "powerPlays": {
+      "description": "Penn St. 2 for 5 (0.4 %), Maine 0 for 2 (00.0 %)"
+    },
+    "shots": [
+      {
+        "teamId": "PENNST",
+        "teamType": "visiting",
+        "totalShots": "34",
+        "summary": [
+          { "period": "1", "shots": "16" },
+          { "period": "2", "shots": "9" },
+          { "period": "3", "shots": "9" }
+        ]
+      },
+      {
+        "teamId": "MAINE",
+        "teamType": "home",
+        "totalShots": "27",
+        "summary": [
+          { "period": "1", "shots": "8" },
+          { "period": "2", "shots": "10" },
+          { "period": "3", "shots": "9" }
+        ]
+      }
+    ]
+  }
+  
