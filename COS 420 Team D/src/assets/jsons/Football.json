@@ -3,8 +3,8 @@
     "updatedTimestamp": "2025-03-28 23:14:22 ET",
     "meta": {
       "title": "Umaine Football scores",
-      "description": "Boxscores for Maine vs Penn St.",
-      "sport": "hockey-men",
+      "description": "Scores for Umaine vs Liberty University",
+      "sport": "Football",
       "division": "d1",
       "gametype": "Regular Season",
       "status": "Final",
@@ -13,7 +13,7 @@
       "seconds": "00",
       "teams": [
         {
-          "homeTeam": "true",
+          "homeTeam": "false",
           "id": "39169",
           "seoName": "maine",
           "sixCharAbbr": "MAINE",
@@ -22,12 +22,12 @@
           "color": "#0C2340"
         },
         {
-          "homeTeam": "false",
+          "homeTeam": "true",
           "id": "51081",
-          "seoName": "penn-st",
-          "sixCharAbbr": "PENNST",
-          "shortName": "Penn St.",
-          "nickName": "Nittany Lions",
+          "seoName": "Liberty University",
+          "sixCharAbbr": "LIBERTY",
+          "shortName": "Lib Uni",
+          "nickName": "N/A",
           "color": "#041E42"
         }
       ]
