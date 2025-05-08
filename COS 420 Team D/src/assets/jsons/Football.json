@@ -6,6 +6,9 @@
       "description": "Scores for Umaine vs Liberty University",
       "sport": "Football",
       "division": "d1",
+
+      "_comment": "most lines below are all copied from the hard coding of hockey. Needs to be redone or changed to automatic fetching via the api",
+      
       "gametype": "Regular Season",
       "status": "Final",
       "period": "3",

@@ -66,7 +66,7 @@ function football(){
       <h3>{gameData.meta.description}</h3>
       <div className="teams">
         <p>{teamIdToShortName[gameData.teams[0].teamId.toString()]} | {teamIdToShortName[gameData.teams[1].teamId.toString()]}</p>
-        <p>{gameData.teams[0].totalStats.goals} - {gameData.teams[1].totalStats.goals}</p>
+        <p>{"44"} - {"59"}</p>
       </div>
     </div>
   );
