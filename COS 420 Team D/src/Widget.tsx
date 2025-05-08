@@ -2,7 +2,7 @@ import { useState, useEffect, MouseEvent } from "react";
 import "./Widget.css";
 import Baseball from "./Baseball";
 import Hockey from "./Hockey";
-import football from "./Football";
+import Football from "./Football";
 
 /*
     The widget component gets fed its data from the individual components like baseball and hockey.
@@ -23,7 +23,7 @@ function Widget({
   onRemove,
 }: {
   initialPosition: { x: number; y: number };
-  widgetType: "Baseball" | "Hockey" | "FootBall";
+  widgetType: "Baseball" | "Hockey" | "Football";
   gridSize: number;
   freeCells: Set<string>;
   onMove: (oldCell: string, newCell: string) => void;
