@@ -28,7 +28,7 @@ function WidgetPage() {
         });
     };
     //Function to handle adding widgets to the grid from the add widget button
-    const addWidget = (type: "Baseball" | "Hockey") => {
+    const addWidget = (type: "Baseball" | "Hockey" | "Football") => {
         const newWidget = {
             id: widgets.length + 1,
             type,
@@ -55,6 +55,7 @@ function WidgetPage() {
                         <h3>Select Widget Type</h3>
                         <button onClick={() => addWidget('Hockey')}>Hockey</button>
                         <button onClick={() => addWidget('Baseball')}>Baseball</button>
+                        <button onClick={() => addWidget('Football')}>Football</button>
                         {/* Add more buttons for new components here */}
                         <button onClick={() => setShowModal(false)}>Cancel</button>
                     </div>
