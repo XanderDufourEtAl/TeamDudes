@@ -2,6 +2,7 @@ import { useState, useEffect, MouseEvent } from "react";
 import "./Widget.css";
 import Baseball from "./Baseball";
 import Hockey from "./Hockey";
+import football from "./Football";
 
 /*
     The widget component gets fed its data from the individual components like baseball and hockey.
@@ -110,6 +111,7 @@ function Widget({
       <div id="mydivcontent" style={{ width: "225px", height: "200px" }}>
         {widgetType === "Baseball" && <Baseball />}
         {widgetType === "Hockey" && <Hockey />}
+        {widgetType === "Football" && <Football />}
         {/* Add more widget types as needed */}
       </div>
     </div>
