@@ -22,7 +22,7 @@ function Widget({
   onRemove,
 }: {
   initialPosition: { x: number; y: number };
-  widgetType: "Baseball" | "Hockey";
+  widgetType: "Baseball" | "Hockey" | "FootBall";
   gridSize: number;
   freeCells: Set<string>;
   onMove: (oldCell: string, newCell: string) => void;
