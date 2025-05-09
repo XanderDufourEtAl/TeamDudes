@@ -2,6 +2,8 @@ import { useState, useEffect, MouseEvent } from "react";
 import "./Widget.css";
 import Baseball from "./Baseball";
 import Hockey from "./Hockey";
+import Football from "./Football";
+import CountDown from "./CountDown";
 
 /*
     The widget component gets fed its data from the individual components like baseball and hockey.
@@ -22,7 +24,7 @@ function Widget({
   onRemove,
 }: {
   initialPosition: { x: number; y: number };
-  widgetType: "Baseball" | "Hockey";
+  widgetType: "Baseball" | "Hockey" | "Football"| "CountDown";
   gridSize: number;
   freeCells: Set<string>;
   onMove: (oldCell: string, newCell: string) => void;
@@ -110,10 +112,13 @@ function Widget({
       <div id="mydivcontent" style={{ width: "225px", height: "200px" }}>
         {widgetType === "Baseball" && <Baseball />}
         {widgetType === "Hockey" && <Hockey />}
+        {widgetType === "Football" && <Football />}
+        {widgetType === "CountDown" && <CountDown />}
         {/* Add more widget types as needed */}
       </div>
     </div>
   );
 }
+
 
 export default Widget;

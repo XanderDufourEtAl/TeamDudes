@@ -15,7 +15,7 @@ import './WidgetPage.css'; // Import your CSS file for styling
 
 function WidgetPage() {
     const [freeCells, setFreeCells] = useState<Set<string>>(new Set());
-    const [widgets, setWidgets] = useState<{ id: number; type: "Baseball" | "Hockey"; position: { x: number; y: number } }[]>([]);
+    const [widgets, setWidgets] = useState<{ id: number; type: "Baseball" | "Hockey" | "Football" | "CountDown"; position: { x: number; y: number } }[]>([]);
     const [showModal, setShowModal] = useState(false);
 
     // Handles moving the widgets around the grid and prevents overlap
@@ -28,7 +28,7 @@ function WidgetPage() {
         });
     };
     //Function to handle adding widgets to the grid from the add widget button
-    const addWidget = (type: "Baseball" | "Hockey") => {
+    const addWidget = (type: "Baseball" | "Hockey" | "Football" | "CountDown") => {
         const newWidget = {
             id: widgets.length + 1,
             type,
@@ -55,6 +55,8 @@ function WidgetPage() {
                         <h3>Select Widget Type</h3>
                         <button onClick={() => addWidget('Hockey')}>Hockey</button>
                         <button onClick={() => addWidget('Baseball')}>Baseball</button>
+                        <button onClick={() => addWidget('Football')}>Football</button>
+                        <button onClick={() => addWidget('CountDown')}>Count Down</button>
                         {/* Add more buttons for new components here */}
                         <button onClick={() => setShowModal(false)}>Cancel</button>
                     </div>

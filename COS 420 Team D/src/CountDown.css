@@ -1,0 +1,37 @@
+.game-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .team {
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #555;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+
+  .hockey-container {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Adjust to fit the parent container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+  }
