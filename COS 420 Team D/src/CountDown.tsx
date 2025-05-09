@@ -23,9 +23,9 @@ function CountDown(){
     //Formatting the data to be displayed in the widget
     <div className="countdown-container">
     
-      <h3>{"Test3"}</h3>
+      <h3>{"Time till next Followed Game:"}</h3>
       <div className="teams">
-        <p>{"trial1"} | {"trial2"}</p>
+        <p>{"Umaine Vs Big"}</p>
         <p>{"test2"} - {"test2"}</p>
         
         
