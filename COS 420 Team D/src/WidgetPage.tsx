@@ -56,7 +56,7 @@ function WidgetPage() {
                         <button onClick={() => addWidget('Hockey')}>Hockey</button>
                         <button onClick={() => addWidget('Baseball')}>Baseball</button>
                         <button onClick={() => addWidget('Football')}>Football</button>
-                        <button onClick={() => addWidget('CountDown1')}>CountDown</button>
+                        <button onClick={() => addWidget('CountDown1')}>Count Down</button>
                         {/* Add more buttons for new components here */}
                         <button onClick={() => setShowModal(false)}>Cancel</button>
                     </div>
