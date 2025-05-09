@@ -26,7 +26,8 @@ function CountDown(){
       <h3>{"Time till next Followed Game:"}</h3>
       <div className="teams">
         <p>{"Umaine Vs Binghamton"}</p>
-        <p>{"test2"} - {"test2"}</p>
+        <p>{"Sport: Baseball"}</p>
+        <p>{"INSERT TIMER HERE"}</p>
         
         
       </div>
