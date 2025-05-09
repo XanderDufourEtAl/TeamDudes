@@ -9,6 +9,21 @@ import './CountDown.css';
 //const data = jsonData;
 console.log("test1");
 
+//const millsecToSec = 1000
+//const secToMin = 60
+//const MinToHour = 60
+//const HourToDay = 24
+
+//curent time in milliseconds
+const CurTime = (Date.now()/100000000);
+
+//plug in the hard codded days till game, then the hour and minute the game in on
+//const gameDaysFromNow = 0
+//const gameHourOnDay = 15
+//const gameMinuteOnDay = 0
+
+//convert curtime to curday
+//const curDay = CurTime / millsecToSec / secToMin / MinToHour / HourToDay
 
 //const gameData: GameData = jsonData;// Holds all the data from the json, accessed using the interfaces
 function CountDown(){
@@ -23,10 +38,12 @@ function CountDown(){
     //Formatting the data to be displayed in the widget
     <div className="countdown-container">
     
-      <h3>{"Time till next Followed Game:"}</h3>
+      <h3>{"Next game:"}</h3>
       <div className="teams">
         <p>{"Umaine Vs Binghamton"}</p>
-        <p>{"test2"} - {"test2"}</p>
+        <p>{"Sport: Baseball"}</p>
+        <p>{"INSERT TIMER HERE"}</p>
+        <p>{CurTime}</p>
         
         
       </div>
