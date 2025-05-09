@@ -118,7 +118,7 @@ function Baseball() {
     useEffect(() => {
         const fetchScore = async () => {
             try {
-                const response = await fetch("https://sidearmstats.com/bryantu/baseball/game.json");//Link to game.json (may need to be updated depending on umaine Home or Away game)
+                const response = await fetch("https://sidearmstats.com/umaine/baseball/game.json");//Link to game.json (may need to be updated depending on umaine Home or Away game)
                 const json = await response.json();
                 const data: BaseballGame = json.Game; // Access the Game property to match the BaseballGame interface
                 setHomeScore(data.HomeTeam.Score);
