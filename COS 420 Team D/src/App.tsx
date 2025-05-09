@@ -25,7 +25,6 @@ function App() {
 
   return (
     <Router>
-      {/* Theme Toggle Buttons */}
       <div className="theme-buttons">
         <button 
           className={`theme-button ${!isDarkMode ? 'active-theme' : ''}`}
@@ -41,31 +40,34 @@ function App() {
         </button>
       </div>
 
-      {/* Auth Buttons */}
       <div className="auth-buttons">
         <Link to="/signup" className="auth-button signup">Sign Up</Link>
         <Link to="/login" className="auth-button login">Login</Link>
       </div>
 
-      {/* Main Content */}
       <div id="root">
         <Routes>
           <Route path="/login" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/widget" element={<WidgetPage />} />
-          <Route path="/" element={
-            <div className="main-content">
-              <div>
-                <a href="nothing" target="_blank" rel="noopener noreferrer">
-                  <img src={maineLogo} className="logo Maine" alt="Maine logo" />
-                </a>
+          <Route 
+            path="/" 
+            element={
+              <div className="main-content">
+                <div>
+                  <a href="nothing" target="_blank" rel="noopener noreferrer">
+                    <img src={maineLogo} className="logo Maine" alt="Maine logo" />
+                  </a>
+                </div>
+                <h1 className="theme-text">Black Bear Bulletin</h1>
+                <div className="card">
+                  <Link to="/widget" className="schedule-link">
+                    Click here for the Dashboard!
+                  </Link>
+                </div>
               </div>
-              <h1 className="theme-text">Black Bear Bulletin</h1>
-              <div className="card">
-                <Link to="/widget" className="schedule-link">Click here for the Dashboard!</Link>
-              </div>
-            </div>
-          } />
+            } 
+          />
         </Routes>
       </div>
     </Router>
