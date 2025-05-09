@@ -25,7 +25,7 @@ function CountDown(){
     
       <h3>{"Time till next Followed Game:"}</h3>
       <div className="teams">
-        <p>{"Umaine Vs Big"}</p>
+        <p>{"Umaine Vs Binghamton"}</p>
         <p>{"test2"} - {"test2"}</p>
         
         
