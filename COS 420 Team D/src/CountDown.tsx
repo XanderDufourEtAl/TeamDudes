@@ -48,6 +48,7 @@ interface GameData {
 }
 
 // Use the interface
+/*
 const gameData: GameData = jsonData;// Holds all the data from the json, accessed using the interfaces
 function Hockey(){
   //Have to use this to get the team names from the json as only team id and state name are given
@@ -66,5 +67,5 @@ function Hockey(){
     </div>
   );
 }
-
+*/
 export default Hockey;
