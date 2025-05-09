@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import maineLogo from './assets/maine.jpg';
 import SignUp from './SignUp';
+import SignIn from './SignIn';
 import WidgetPage from './WidgetPage';
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
       </div>
       
       <Routes>
+        <Route path="/login" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/widget" element={<WidgetPage />} />
         {/* Main page with links */}
