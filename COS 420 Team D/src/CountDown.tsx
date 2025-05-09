@@ -43,7 +43,7 @@ function CountDown(){
         <p>{"Umaine Vs Binghamton"}</p>
         <p>{"Sport: Baseball"}</p>
         <p>{"INSERT TIMER HERE"}</p>
-        <p>{curDay}</p>
+        <p>{CurTime}</p>
         
         
       </div>
