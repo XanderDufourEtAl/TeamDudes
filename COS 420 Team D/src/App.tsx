@@ -6,7 +6,6 @@ import SignIn from './SignIn';
 import WidgetPage from './WidgetPage';
 import './App.css';
 
-
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -48,9 +47,10 @@ function App() {
         <Link to="/login" className="auth-button login">Login</Link>
       </div>
 
-      {/* Main Content - removed theme class from here */}
+      {/* Main Content */}
       <div id="root">
         <Routes>
+          <Route path="/login" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/widget" element={<WidgetPage />} />
           <Route path="/" element={
@@ -64,23 +64,6 @@ function App() {
               <div className="card">
                 <Link to="/widget" className="schedule-link">Click here for the Dashboard!</Link>
               </div>
-      
-      <Routes>
-        <Route path="/login" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/widget" element={<WidgetPage />} />
-        {/* Main page with links */}
-        <Route path="/" element={
-          <div className="main-content">
-            <div>
-              <a href="nothing" target="_blank">
-                <img src={maineLogo} className="logo Maine" alt="Maine logo" />
-              </a>
-            </div>
-            <h1>UMaine Hockey</h1>
-            <div className="card">
-              <Link to="/widget" className="schedule-link"> Click here for the Dashboard!</Link>
-
             </div>
           } />
         </Routes>
