@@ -3,6 +3,7 @@ import "./Widget.css";
 import Baseball from "./Baseball";
 import Hockey from "./Hockey";
 import Football from "./Football";
+import CountDown from "./CountDown";
 
 /*
     The widget component gets fed its data from the individual components like baseball and hockey.
@@ -23,7 +24,7 @@ function Widget({
   onRemove,
 }: {
   initialPosition: { x: number; y: number };
-  widgetType: "Baseball" | "Hockey" | "Football";
+  widgetType: "Baseball" | "Hockey" | "Football"| "CountDown";
   gridSize: number;
   freeCells: Set<string>;
   onMove: (oldCell: string, newCell: string) => void;
@@ -112,6 +113,7 @@ function Widget({
         {widgetType === "Baseball" && <Baseball />}
         {widgetType === "Hockey" && <Hockey />}
         {widgetType === "Football" && <Football />}
+        {widgetType === "CountDown" && <CountDown />}
         {/* Add more widget types as needed */}
       </div>
     </div>
