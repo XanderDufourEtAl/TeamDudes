@@ -5,7 +5,7 @@ import SignIn from './SignIn';
 import WidgetPage from './WidgetPage';
 import './App.css';
 
-//we really need to add some comments guys, this is unintelligable
+//Function to create app
 function App() {
   return (
     <Router>
