@@ -12,6 +12,8 @@ vi.mock('firebase/auth', () => ({
 
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
+
+//Test that the signup page renders correctly
 describe('SignUp Component', () => {
   beforeEach(() => {
     vi.clearAllMocks();
@@ -19,9 +21,7 @@ describe('SignUp Component', () => {
 
   it('renders the sign up form with proper heading', () => {
     render(<SignUp />);
-    // Use role query to specifically target the heading, not the button
     expect(screen.getByRole('heading', { name: /sign up/i })).toBeInTheDocument();
-    // Use button with specific role to avoid ambiguity
     expect(screen.getByRole('button', { name: /sign up/i })).toBeInTheDocument();
   });
 
@@ -55,16 +55,16 @@ describe('SignUp Component', () => {
   it('shows error when passwords do not match', async () => {
     const { container } = render(<SignUp />);
     
-    // Fill out the form
+    // Test of filling out the form
     fireEvent.change(screen.getByLabelText(/username/i), { target: { value: 'testuser' } });
     fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'test@example.com' } });
     fireEvent.change(screen.getByLabelText(/^password/i), { target: { value: 'password123' } });
     fireEvent.change(screen.getByLabelText(/confirm password/i), { target: { value: 'differentpassword' } });
     
-    // Submit the form using role-based selection
+    // Submit the form
     fireEvent.click(screen.getByRole('button', { name: /sign up/i }));
     
-    // Check for error message using a more flexible approach
+    // 
     await waitFor(() => {
       const errorElement = container.querySelector('.error-message');
       expect(errorElement).not.toBeNull();
