@@ -18,17 +18,21 @@ function CountDown(){
     map[team.id] = team.shortName;
     return map;
   }, {} as Record<string, string>);
+  */
   return (
-    // Formatting the data to be displayed in the widget
+    //Formatting the data to be displayed in the widget
     <div className="countdown-container">
-      <h3>{gameData.meta.description}</h3>
+    
+      <h3>{"Test3"}</h3>
       <div className="teams">
-        <p>{teamIdToShortName[gameData.teams[0].teamId.toString()]} | {teamIdToShortName[gameData.teams[1].teamId.toString()]}</p>
-        <p>{gameData.teams[0].totalStats.goals} - {gameData.teams[1].totalStats.goals}</p>
+        <p>{"trial1"} | {"trial2"}</p>
+        <p>{"test2"} - {"test2"}</p>
+        
+        
       </div>
     </div>
   );
-  */
+
 }
 
 export default CountDown;
