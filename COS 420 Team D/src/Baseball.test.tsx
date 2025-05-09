@@ -51,7 +51,7 @@ describe('Baseball Component', () => {
     });
 
     expect(screen.getByText('October 15, 2023')).toBeInTheDocument();
-    expect(global.fetch).toHaveBeenCalledWith("https://sidearmstats.com/bryantu/baseball/game.json");
+    expect(global.fetch).toHaveBeenCalledWith("https://sidearmstats.com/umaine/baseball/game.json");
   });
 
   it('handles fetch error', async () => {
