@@ -1,11 +1,11 @@
-import jsonData from './assets/jsons/Hockey.json';// Data is currently hardcoded to the json file, using ncaa-grab.py and gathering boxscore
-import './Hockey.css';
+import jsonData from './assets/jsons/Football.json';// Data is currently hardcoded to the json file, using ncaa-grab.py and gathering boxscore
+import './Football.css';
 
 /*
-  Similar to the baseball widget, the hockey widget fetches data from a json file.
+  Similar to the baseball widget, the football widget fetches data from a json file.
   This data on the other hand is not live and is hardcoded to a json file.
-  Currently the json file is hockey.json which is the boxscore for umaine last hockey game vs Penn State.
-  The data is formatted on its own from hockey.css and then displayed in the widget.tsx file.
+  Currently the json file is football.json which is the boxscore for umaine last football game vs Penn State.
+  The data is formatted on its own from football.css and then displayed in the widget.tsx file.
 
   As i said in baseball.tsx, if you want to add a widget for individual player for example,
   you should be able to do a new function and export it but again idk for sure -Matt
@@ -14,7 +14,7 @@ import './Hockey.css';
 const data = jsonData;
 console.log(data.meta.title);
 
-interface HockeyTeam {
+interface footballTeam {
   teamId: number;
   playerStats: PlayerStat[];
   playerTotals: Totals;
@@ -49,12 +49,12 @@ interface Meta {
 
 interface GameData {
   meta: Meta;
-  teams: HockeyTeam[];
+  teams: footballTeam[];
 }
 
 // Use the interface
 const gameData: GameData = jsonData;// Holds all the data from the json, accessed using the interfaces
-function Hockey(){
+function football(){
   //Have to use this to get the team names from the json as only team id and state name are given
   const teamIdToShortName = gameData.meta.teams.reduce((map, team) => {
     map[team.id] = team.shortName;
@@ -62,14 +62,14 @@ function Hockey(){
   }, {} as Record<string, string>);
   return (
     // Formatting the data to be displayed in the widget
-    <div className="hockey-container">
+    <div className="football-container">
       <h3>{gameData.meta.description}</h3>
       <div className="teams">
         <p>{teamIdToShortName[gameData.teams[0].teamId.toString()]} | {teamIdToShortName[gameData.teams[1].teamId.toString()]}</p>
-        <p>{gameData.teams[0].totalStats.goals} - {gameData.teams[1].totalStats.goals}</p>
+        <p>{"59"} - {"44"}</p>
       </div>
     </div>
   );
 }
 
-export default Hockey;
+export default football;

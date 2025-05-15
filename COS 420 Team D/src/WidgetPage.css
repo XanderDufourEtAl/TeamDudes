@@ -1,0 +1,33 @@
+/* Adjust widget container spacing */
+.widget-container {
+    position: relative;
+    display: inline-block;
+    margin: 0px; /* Reduce margin to minimize layout shifts */
+}
+
+/* Ensure consistent widget content positioning */
+.widget-content {
+    position: relative;
+}
+
+.remove-widget-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 0px;
+    height: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Remove button hover effect if unnecessary */
+.remove-widget-button:hover {
+    background-color: darkred;
+}
