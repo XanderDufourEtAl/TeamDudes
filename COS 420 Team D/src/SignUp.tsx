@@ -85,10 +85,12 @@ const SignUp = () => {
           Sign Up
         </button>
       </form>
+
       {error && <p className="error-message">{error}</p>} {/* Display error message if there is one */}
       <p className="login-link">
         Already have an account? <a href="/login">Log in</a>
       </p>
+
     </div>
   );
 };

@@ -42,8 +42,8 @@ function App() {
 
       <div className="auth-buttons">
         <Link to="/signup" className="auth-button signup">Sign Up</Link>
-        <Link to="/login" className="auth-button login">Login</Link>
       </div>
+
 
       <div id="root">
         <Routes>
@@ -70,6 +70,7 @@ function App() {
           />
         </Routes>
       </div>
+
     </Router>
   );
 }
