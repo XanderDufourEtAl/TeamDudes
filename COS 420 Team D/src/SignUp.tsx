@@ -23,7 +23,7 @@ function SignUp() {
         </div>
         <button type="submit" className="signup-button">Sign Up</button>
       </form>
-      <p className="login-link">Already have an account? <a href="/login">Log in</a></p>
+      
     </div>
   );
 }
